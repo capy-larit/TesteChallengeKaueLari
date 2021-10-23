@@ -9,5 +9,17 @@
   <url>http://maven.apache.org</url>
   <build>
     <finalName>Cardapp</finalName>
+    <finalName>Cardapp</finalName>
+    <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.0.0</version>
+      <configuration>
+        <webappDirectory>WebContent/</webappDirectory>
+      </configuration>
+     
+    </plugin>
+  </plugins>
   </build>
 </project>
