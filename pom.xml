@@ -23,17 +23,16 @@
   </dependencies>
   <build>
     <finalName>WebApp</finalName>
-	 <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId> org.apache.maven.plugins </groupId>
-          <artifactId> maven-compiler-plugin </artifactId>
-          <version> 3.8.1 </version>
-          <configuração>
-            <webappDirectory>WebContent/</webappDirectory>
-          </configuration>
-        </plugin>
-      </plugins>
-</pluginManagement>
+	 <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.0.0</version>
+      <configuration>
+        <webappDirectory>WebContent/</webappDirectory>
+      </configuration>
+     
+    </plugin>
+  </plugins>
   </build>
 </project>
